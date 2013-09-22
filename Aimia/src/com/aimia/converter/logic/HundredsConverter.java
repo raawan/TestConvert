@@ -12,7 +12,7 @@ public class HundredsConverter implements IConverter
 		
 		StringBuilder finalText = new StringBuilder();
 		
-		finalText.append(new UnitConverter().convert(hundredthDigit))
+		finalText.append(new UnitsConverter().convert(hundredthDigit))
 		.append(textSeparator)
 		.append(HundredsConverterConstants.hundred.toString());
 		

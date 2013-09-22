@@ -23,7 +23,7 @@ public class MainConverter implements IConverter
 		IConverter converter = null;
 		if(inputNumber<20)
 		{
-			converter = new UnitConverter();
+			converter = new UnitsConverter();
 		}
 		else if(inputNumber >20 && inputNumber < 100)
 		{

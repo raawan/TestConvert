@@ -10,7 +10,7 @@ public class TensConverter implements IConverter
 	{
 		if(numberToConvert<20)
 		{
-			return new UnitConverter().convert(numberToConvert);
+			return new UnitsConverter().convert(numberToConvert);
 		}
 		
 		int  units = numberToConvert % 10;
@@ -21,7 +21,7 @@ public class TensConverter implements IConverter
 		{
 			finalText.append(geTTensText(tens)).append(IConverter.textSeparator);
 		}
-		finalText.append(new UnitConverter().convert(units));
+		finalText.append(new UnitsConverter().convert(units));
 		return finalText.toString().trim();
 	}
 	

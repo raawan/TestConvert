@@ -2,7 +2,7 @@ package com.aimia.converter.logic;
 
 import com.aimia.converter.constants.UnitConverterConstants;
 
-public class UnitConverter implements IConverter 
+public class UnitsConverter implements IConverter 
 {
 	@Override
 	public String convert(int inputUnitNumber) 
