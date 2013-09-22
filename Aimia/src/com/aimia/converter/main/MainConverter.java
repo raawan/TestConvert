@@ -2,6 +2,7 @@ package com.aimia.converter.main;
 
 public class MainConverter implements IConverter 
 {
+	
 	private static String thousandsText = "thousand";
 	
 	@Override
@@ -19,9 +20,27 @@ public class MainConverter implements IConverter
 		if(lastThreeDigits!=0)
 		{
 			finalText.append(textSeparator)
-					.append(new HundredsConverter().convert(lastThreeDigits));
+					.append(convertUnit(lastThreeDigits));
 		}
 		return finalText.toString();
+	}
+	
+	private String convertUnit(int inputNumber) 
+	{
+		IConverter converter = null;
+		if(inputNumber<20)
+		{
+			converter = new UnitConverter();
+		}
+		else if(inputNumber >20 && inputNumber < 100)
+		{
+			converter = new TensConverter();
+		}
+		else if(inputNumber>=100 && inputNumber < 1000)
+		{
+			converter = new HundredsConverter();
+		}
+		return converter.convert(inputNumber);
 	}
 
 }
