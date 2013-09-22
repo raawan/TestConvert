@@ -1,6 +1,6 @@
-package com.aimia.converter.beans;
+package com.aimia.converter.constants;
 
-public enum Unit 
+public enum ScaleUnit 
 {
 	THOUSAND("thousand",1),MILLION("million",2),DEFAULT("",0);
 	private String text;
@@ -21,7 +21,7 @@ public enum Unit
 		this.power = power;
 	}
 
-	Unit(String text,int power)
+	ScaleUnit(String text,int power)
 	{
 		this.text=text;
 		this.power = power;

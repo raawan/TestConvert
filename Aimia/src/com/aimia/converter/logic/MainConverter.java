@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 import com.aimia.converter.beans.ThreeDigit;
-import com.aimia.converter.beans.Unit;
+import com.aimia.converter.constants.ScaleUnit;
 
 public class MainConverter implements IConverter 
 {
@@ -82,15 +82,15 @@ public class MainConverter implements IConverter
 		 threeDigitNumbers.add(threeDigitNumber);
 	}
 	
-	private Unit getUnit(int power)
+	private ScaleUnit getUnit(int power)
 	{
 		switch(power)
 		{
-			case 0 : return Unit.DEFAULT;
-			case 1: return Unit.THOUSAND;
-			case 2: return Unit.MILLION;
+			case 0 : return ScaleUnit.DEFAULT;
+			case 1: return ScaleUnit.THOUSAND;
+			case 2: return ScaleUnit.MILLION;
 		}
-		return Unit.DEFAULT;
+		return ScaleUnit.DEFAULT;
 	}
 	
 

@@ -1,10 +1,9 @@
 package com.aimia.converter.logic;
 
+import com.aimia.converter.constants.HundredsConverterConstants;
+
 public class HundredsConverter implements IConverter 
 {
-	private static 	String hundredsText = "hundred";
-	private static	String hundredsSeparator = "and";
-	
 	@Override
 	public String convert(int numberToConvert) 
 	{
@@ -15,12 +14,12 @@ public class HundredsConverter implements IConverter
 		
 		finalText.append(new UnitConverter().convert(hundredthDigit))
 		.append(textSeparator)
-		.append(hundredsText);
+		.append(HundredsConverterConstants.hundred.toString());
 		
 		if(lastTwoDigits!=0)
 		{
 			finalText.append(textSeparator)
-					.append(hundredsSeparator)
+					.append(HundredsConverterConstants.and.toString())
 					.append(textSeparator)
 					.append(new TensConverter().convert(lastTwoDigits));
 		}

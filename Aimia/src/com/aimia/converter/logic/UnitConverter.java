@@ -1,5 +1,7 @@
 package com.aimia.converter.logic;
 
+import com.aimia.converter.constants.UnitConverterConstants;
+
 public class UnitConverter implements IConverter 
 {
 	@Override
@@ -12,25 +14,25 @@ public class UnitConverter implements IConverter
 	{
 		switch(inputNumber)
 		{
-			case 1 : return "one";
-			case 2 : return "two";
-			case 3 : return "three";
-			case 4 : return "four";
-			case 5 : return "five";
-			case 6 : return "six";
-			case 7 : return "seven";
-			case 8 : return "eight";
-			case 9 : return "nine";
-			case 10 : return "ten";
-			case 11 : return "eleven";
-			case 12 : return "twelve";
-			case 13 : return "thirteen";
-			case 14 : return "fourteen";
-			case 15 : return "fifteen";
-			case 16 : return "sixteen";
-			case 17 : return "seventeen";
-			case 18 : return "eighteen";
-			case 19 : return "nineteen";
+			case 1 : return UnitConverterConstants.one.toString();
+			case 2 : return UnitConverterConstants.two.toString();
+			case 3 : return UnitConverterConstants.three.toString();
+			case 4 : return UnitConverterConstants.four.toString();
+			case 5 : return UnitConverterConstants.five.toString();
+			case 6 : return UnitConverterConstants.six.toString();
+			case 7 : return UnitConverterConstants.seven.toString();
+			case 8 : return UnitConverterConstants.eight.toString();
+			case 9 : return UnitConverterConstants.nine.toString();
+			case 10 : return UnitConverterConstants.ten.toString();
+			case 11 : return UnitConverterConstants.eleven.toString();
+			case 12 : return UnitConverterConstants.twelve.toString();
+			case 13 : return UnitConverterConstants.thirteen.toString();
+			case 14 : return UnitConverterConstants.fourteen.toString();
+			case 15 : return UnitConverterConstants.fifteen.toString();
+			case 16 : return UnitConverterConstants.sixteen.toString();
+			case 17 : return UnitConverterConstants.seventeen.toString();
+			case 18 : return UnitConverterConstants.eighteen.toString();
+			case 19 : return UnitConverterConstants.nineteen.toString();
 		}
 		return "";
 	}

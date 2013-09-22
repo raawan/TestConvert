@@ -1,14 +1,16 @@
 package com.aimia.converter.beans;
 
+import com.aimia.converter.constants.ScaleUnit;
+
 public class ThreeDigit 
 {
 	private Integer number;
-	private Unit	unit;
+	private ScaleUnit	scaleUnit;
 	
-	public ThreeDigit(Integer number, Unit unit)
+	public ThreeDigit(Integer number, ScaleUnit scaleUnit)
 	{
 		this.number = number;
-		this.unit = unit;
+		this.scaleUnit = scaleUnit;
 	}
 	
 	public Integer getNumber() {
@@ -17,11 +19,11 @@ public class ThreeDigit
 	public void setNumber(Integer number) {
 		this.number = number;
 	}
-	public Unit getUnit() {
-		return unit;
+	public ScaleUnit getUnit() {
+		return scaleUnit;
 	}
-	public void setUnit(Unit unit) {
-		this.unit = unit;
+	public void setUnit(ScaleUnit scaleUnit) {
+		this.scaleUnit = scaleUnit;
 	}
 	
 }
