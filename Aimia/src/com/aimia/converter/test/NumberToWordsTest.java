@@ -47,6 +47,6 @@ public class NumberToWordsTest
 	@Test
 	public void testConvert_onInputAny2DigitNUmber_getOutputInWord() 
 	{
-		assertEquals("47", numberToWords.convert("forty seven"));
+		assertEquals("forty seven", numberToWords.convert("47"));
 	}
 }
