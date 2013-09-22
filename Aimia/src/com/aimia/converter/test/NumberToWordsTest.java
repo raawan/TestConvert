@@ -37,4 +37,11 @@ public class NumberToWordsTest
 	{
 		assertEquals("two", numberToWords.convert("2"));
 	}
+	
+	@Test
+	public void testConvert_onInputANyNumberBet1to19_getOutputInWord() 
+	{
+		assertEquals("sixteen", numberToWords.convert("16"));
+		assertEquals("nine", numberToWords.convert("9"));
+	}
 }
