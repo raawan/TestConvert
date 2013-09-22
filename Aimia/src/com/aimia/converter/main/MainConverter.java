@@ -2,7 +2,6 @@ package com.aimia.converter.main;
 
 public class MainConverter implements IConverter 
 {
-	
 	private static String thousandsText = "thousand";
 	
 	@Override

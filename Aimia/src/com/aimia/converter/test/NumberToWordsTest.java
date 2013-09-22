@@ -115,4 +115,10 @@ public class NumberToWordsTest
 	{
 		assertEquals("nine thousand nine hundred and ninety nine", numberToWords.convert("9999"));
 	}
+	
+	@Test
+	public void testConvert5_onInputAny5DigitNUmber_getOutputInWord() 
+	{
+		assertEquals("ninety nine thousand nine hundred and ninety nine", numberToWords.convert("99999"));
+	}
 }
