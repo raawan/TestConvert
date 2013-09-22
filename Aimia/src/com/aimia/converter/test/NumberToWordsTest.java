@@ -102,4 +102,17 @@ public class NumberToWordsTest
 	{
 		assertEquals("one thousand one", numberToWords.convert("1001"));
 	}
+	
+
+	@Test
+	public void testConvert4_onInputAny4DigitNUmber_getOutputInWord() 
+	{
+		assertEquals("one thousand twenty three", numberToWords.convert("1023"));
+	}
+	
+	@Test
+	public void testConvert5_onInputAny4DigitNUmber_getOutputInWord() 
+	{
+		assertEquals("nine thousand nine hundred and ninety nine", numberToWords.convert("9999"));
+	}
 }
