@@ -52,7 +52,7 @@ public class NumberToWordsTest
 	@Test
 	public void testConvert2_onInputAny2DigitNUmber_getOutputInWord() 
 	{
-		assertEquals("ninty nine", numberToWords.convert("99"));
+		assertEquals("ninety nine", numberToWords.convert("99"));
 	}
 	
 	@Test
@@ -71,5 +71,17 @@ public class NumberToWordsTest
 	public void testConvert2_onInputAny3DigitNUmber_getOutputInWord() 
 	{
 		assertEquals("one hundred and seven", numberToWords.convert("107"));
+	}
+	
+	@Test
+	public void testConvert3_onInputAny3DigitNUmber_getOutputInWord() 
+	{
+		assertEquals("nine hundred and ninety nine", numberToWords.convert("999"));
+	}
+	
+	@Test
+	public void testConvert4_boundary_onInputAny3DigitNUmber_getOutputInWord() 
+	{
+		assertEquals("one hundred", numberToWords.convert("100"));
 	}
 }

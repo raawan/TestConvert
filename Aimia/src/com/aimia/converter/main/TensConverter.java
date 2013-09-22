@@ -29,7 +29,7 @@ public class TensConverter implements IConverter
 			case 60: return "sixty";
 			case 70: return "seventy";
 			case 80: return "eighty";
-			case 90: return "ninty";
+			case 90: return "ninety";
 		}
 		return "";
 	}
