@@ -8,7 +8,14 @@ public class TensConverter implements IConverter
 	{
 		int  units = numberToConvert % 10;
 		int  tens  = numberToConvert - units;
-		return geTTensText(tens)+ IConverter.textSeparator + new UnitConverter().convert(units);
+		StringBuilder finalText = new StringBuilder();
+		
+		if(tens!=0)
+		{
+			finalText.append(geTTensText(tens)).append(IConverter.textSeparator);
+		}
+		finalText.append(new UnitConverter().convert(units));
+		return finalText.toString();
 	}
 	
 	private String geTTensText(int tens) 
