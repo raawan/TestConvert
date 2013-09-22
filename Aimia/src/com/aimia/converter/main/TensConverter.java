@@ -9,7 +9,7 @@ public class TensConverter implements IConverter
 	{
 		int  units = numberToConvert % 10;
 		int  tens  = numberToConvert - units;
-		return geTTensText(tens)+ " " + converter.convert(units);
+		return geTTensText(tens)+ IConverter.textSeparator + converter.convert(units);
 	}
 	
 	private String geTTensText(int tens) 
