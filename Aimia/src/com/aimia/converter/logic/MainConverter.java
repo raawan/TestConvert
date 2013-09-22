@@ -3,8 +3,8 @@ package com.aimia.converter.logic;
 import java.util.List;
 import java.util.ArrayList;
 
-import com.aimia.converter.main.ThreeDigits;
-import com.aimia.converter.main.Unit;
+import com.aimia.converter.beans.ThreeDigits;
+import com.aimia.converter.beans.Unit;
 
 public class MainConverter implements IConverter 
 {
