@@ -23,7 +23,7 @@ public class HundredsConverter implements IConverter
 					.append(textSeparator)
 					.append(new TensConverter().convert(lastTwoDigits));
 		}
-		return finalText.toString();
+		return finalText.toString().trim();
 	}
 
 }

@@ -117,8 +117,26 @@ public class NumberToWordsTest
 	}
 	
 	@Test
-	public void testConvert5_onInputAny5DigitNUmber_getOutputInWord() 
+	public void testConvert1_onInputAny5DigitNUmber_getOutputInWord() 
 	{
 		assertEquals("ninety nine thousand nine hundred and ninety nine", numberToWords.convert("99999"));
+	}
+	
+	@Test
+	public void testConvert2_onInputAny5DigitNUmber_getOutputInWord() 
+	{
+		assertEquals("ninety nine thousand ninety nine", numberToWords.convert("99099"));
+	}
+	
+	@Test
+	public void testConvert3_onInputAny5DigitNUmber_getOutputInWord() 
+	{
+		assertEquals("ninety nine thousand nine", numberToWords.convert("99009"));
+	}
+	
+	@Test
+	public void testConvert4_onInputAny5DigitNUmber_getOutputInWord() 
+	{
+		assertEquals("ninety thousand nine", numberToWords.convert("90009"));
 	}
 }

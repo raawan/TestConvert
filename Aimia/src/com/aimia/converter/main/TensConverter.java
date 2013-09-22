@@ -20,7 +20,7 @@ public class TensConverter implements IConverter
 			finalText.append(geTTensText(tens)).append(IConverter.textSeparator);
 		}
 		finalText.append(new UnitConverter().convert(units));
-		return finalText.toString();
+		return finalText.toString().trim();
 	}
 	
 	private String geTTensText(int tens) 

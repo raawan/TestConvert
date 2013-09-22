@@ -4,7 +4,7 @@ public enum Unit
 {
 	THOUSAND("thousand",1),MILLION("million",2),DEFAULT("",0);
 	private String text;
-	private int power;//total zeroes
+	private int power;
 	public String getText() {
 		return text;
 	}
