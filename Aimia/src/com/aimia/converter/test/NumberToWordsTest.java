@@ -25,7 +25,6 @@ public class NumberToWordsTest
 		
 	}
 	
-	//givenResourceDoesNotExist_whenResourceIsRetrieved_thenNoResourceIsReceived()
 	@Test
 	public void testConvert_onInputOne_getOutputOne() 
 	{
@@ -39,9 +38,15 @@ public class NumberToWordsTest
 	}
 	
 	@Test
-	public void testConvert_onInputANyNumberBet1to19_getOutputInWord() 
+	public void testConvert_onInputAnyNumberBet1to19_getOutputInWord() 
 	{
 		assertEquals("sixteen", numberToWords.convert("16"));
 		assertEquals("nine", numberToWords.convert("9"));
+	}
+	
+	@Test
+	public void testConvert_onInputAny2DigitNUmber_getOutputInWord() 
+	{
+		assertEquals("47", numberToWords.convert("forty seven"));
 	}
 }
