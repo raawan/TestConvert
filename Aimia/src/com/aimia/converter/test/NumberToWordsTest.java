@@ -139,4 +139,18 @@ public class NumberToWordsTest
 	{
 		assertEquals("ninety thousand nine", numberToWords.convert("90009"));
 	}
+	
+	@Test
+	public void testConvert5_onInputAny5DigitNUmber_getOutputInWord() 
+	{
+		assertEquals("ninety thousand", numberToWords.convert("90000"));
+	}
+	
+	
+	@Test
+	public void testConvert_onInputAnyDigitNUmber_getOutputInWord() 
+	{
+		assertEquals("fifty six million nine hundred and forty five thousand seven hundred and eighty one", numberToWords.convert("56945781"));
+	}
+	
 }
