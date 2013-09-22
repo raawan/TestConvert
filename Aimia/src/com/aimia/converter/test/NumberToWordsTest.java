@@ -62,8 +62,14 @@ public class NumberToWordsTest
 	}
 	
 	@Test
-	public void testConvert_onInputAny3DigitNUmber_getOutputInWord() 
+	public void testConvert1_onInputAny3DigitNUmber_getOutputInWord() 
 	{
 		assertEquals("one hundred and twenty one", numberToWords.convert("121"));
+	}
+	
+	@Test
+	public void testConvert2_onInputAny3DigitNUmber_getOutputInWord() 
+	{
+		assertEquals("one hundred and seven", numberToWords.convert("107"));
 	}
 }
