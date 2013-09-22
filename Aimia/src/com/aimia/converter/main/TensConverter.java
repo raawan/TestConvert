@@ -6,6 +6,11 @@ public class TensConverter implements IConverter
 	@Override
 	public String convert(int numberToConvert) 
 	{
+		if(numberToConvert<20)
+		{
+			return new UnitConverter().convert(numberToConvert);
+		}
+		
 		int  units = numberToConvert % 10;
 		int  tens  = numberToConvert - units;
 		StringBuilder finalText = new StringBuilder();
