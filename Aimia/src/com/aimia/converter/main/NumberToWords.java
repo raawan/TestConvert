@@ -6,7 +6,7 @@ public class NumberToWords implements INumberToWords
 	public String convert(String number) 
 	{
 		int inputNumber = Integer.valueOf(number, 10);
-		IConverter converter = new DefaultConverter();
+		IConverter converter = new MainConverter();
 		return converter.convert(inputNumber);
 	}
 }
