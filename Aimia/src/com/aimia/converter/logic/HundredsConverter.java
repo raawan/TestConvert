@@ -2,7 +2,8 @@ package com.aimia.converter.logic;
 
 public class HundredsConverter implements IConverter 
 {
-	private static String hundredsText = "hundred";
+	private static 	String hundredsText = "hundred";
+	private static	String hundredsSeparator = "and";
 	
 	@Override
 	public String convert(int numberToConvert) 

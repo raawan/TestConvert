@@ -11,6 +11,7 @@ public class MainConverter implements IConverter
 	@Override
 	public String convert(int numberToConvert) 
 	{
+		assert(numberToConvert<1);
 		String result = (numberToConvert>999)?
 							formatHighOrderNumber(numberToConvert):
 									formatLowOrderNumber(numberToConvert);

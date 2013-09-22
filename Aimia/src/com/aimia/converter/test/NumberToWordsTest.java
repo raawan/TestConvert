@@ -150,7 +150,8 @@ public class NumberToWordsTest
 	@Test
 	public void testConvert_onInputAnyDigitNUmber_getOutputInWord() 
 	{
-		assertEquals("fifty six million nine hundred and forty five thousand seven hundred and eighty one", numberToWords.convert("56945781"));
+		assertEquals("fifty six million nine hundred and forty five thousand seven hundred and eighty one", 
+				numberToWords.convert("56945781"));
 	}
 	
 }
