@@ -2,6 +2,7 @@ package com.aimia.converter.main;
 
 public interface IConverter 
 {
-	static String textSeparator = " ";
+	String textSeparator = " ";
+	String unitSeparator = "and";
 	public String convert(int converter);
 }

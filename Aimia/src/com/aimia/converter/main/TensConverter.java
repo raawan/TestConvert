@@ -2,14 +2,13 @@ package com.aimia.converter.main;
 
 public class TensConverter implements IConverter
 {
-	private IConverter converter = new UnitConverter();
 			
 	@Override
 	public String convert(int numberToConvert) 
 	{
 		int  units = numberToConvert % 10;
 		int  tens  = numberToConvert - units;
-		return geTTensText(tens)+ IConverter.textSeparator + converter.convert(units);
+		return geTTensText(tens)+ IConverter.textSeparator + new UnitConverter().convert(units);
 	}
 	
 	private String geTTensText(int tens) 
