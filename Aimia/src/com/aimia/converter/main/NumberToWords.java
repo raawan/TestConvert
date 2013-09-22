@@ -13,10 +13,15 @@ public class NumberToWords implements INumberToWords
 		}
 		else
 		{
-			int  units = inputNumber % 10;
-			int  tens  = inputNumber - units;
-			return geTTensText(tens)+ " " + getUnitText(units);
+			return getTextForTwoDigitNumbers(inputNumber);
 		}
+	}
+
+	private String getTextForTwoDigitNumbers(int inputNumber) 
+	{
+		int  units = inputNumber % 10;
+		int  tens  = inputNumber - units;
+		return geTTensText(tens)+ " " + getUnitText(units);
 	}
 
 	private String geTTensText(int tens) 
