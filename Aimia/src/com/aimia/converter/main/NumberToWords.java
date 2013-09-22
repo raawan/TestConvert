@@ -5,6 +5,10 @@ public class NumberToWords implements INumberToWords
 	@Override
 	public String convert(String number) 
 	{
-		return "one";
+		if(number.equals("1"))
+			return "one";
+		else if (number.equals("2"))
+			return "two";
+		return "";
 	}
 }
