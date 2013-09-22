@@ -3,7 +3,7 @@ package com.aimia.converter.logic;
 import java.util.List;
 import java.util.ArrayList;
 
-import com.aimia.converter.beans.ThreeDigits;
+import com.aimia.converter.beans.ThreeDigit;
 import com.aimia.converter.beans.Unit;
 
 public class MainConverter implements IConverter 
@@ -11,11 +11,11 @@ public class MainConverter implements IConverter
 	@Override
 	public String convert(int numberToConvert) 
 	{
-		List<ThreeDigits> threeDigitNumbers = null;
+		List<ThreeDigit> threeDigitNumbers = null;
 		
 		if(numberToConvert>999)
 		{
-			threeDigitNumbers = new ArrayList<ThreeDigits>();
+			threeDigitNumbers = new ArrayList<ThreeDigit>();
 			StringBuilder str= new StringBuilder(Integer.toString(numberToConvert));
 			int startIndex = str.length() -3;
 			int endIndex = str.length();
@@ -39,9 +39,9 @@ public class MainConverter implements IConverter
 	}
 	
 	private String convertNumberedListIntoWords(
-			List<ThreeDigits> threeDigitNumbers) 
+			List<ThreeDigit> threeDigitNumbers) 
 	{
-		ThreeDigits threeDigitNumber = null;
+		ThreeDigit threeDigitNumber = null;
 		StringBuilder  result = new StringBuilder();
 		for (int i = threeDigitNumbers.size()-1;i>=0;i--)
 		{
@@ -54,10 +54,10 @@ public class MainConverter implements IConverter
 		return result.toString().trim();
 	}
 
-	private void addInList(List<ThreeDigits> threeDigitNumbers, int numberToAddInList, int power) 
+	private void addInList(List<ThreeDigit> threeDigitNumbers, int numberToAddInList, int power) 
 	{
-		 ThreeDigits threeDigitNumber = 
-				 	new ThreeDigits(numberToAddInList,getUnit(power));
+		 ThreeDigit threeDigitNumber = 
+				 	new ThreeDigit(numberToAddInList,getUnit(power));
 		 threeDigitNumbers.add(threeDigitNumber);
 	}
 	

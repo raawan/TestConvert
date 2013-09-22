@@ -1,11 +1,11 @@
 package com.aimia.converter.beans;
 
-public class ThreeDigits 
+public class ThreeDigit 
 {
 	private Integer number;
 	private Unit	unit;
 	
-	public ThreeDigits(Integer number, Unit unit)
+	public ThreeDigit(Integer number, Unit unit)
 	{
 		this.number = number;
 		this.unit = unit;
