@@ -2,6 +2,9 @@ package com.aimia.converter.beans;
 
 import com.aimia.converter.constants.ScaleUnit;
 
+/*
+ * Holds three or less digits of a larger number
+ */
 public class ThreeDigit 
 {
 	private Integer number;

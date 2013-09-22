@@ -1,6 +1,6 @@
 package com.aimia.converter.logic;
 
-import com.aimia.converter.constants.HundredsConverterConstants;
+import static com.aimia.converter.constants.HundredsConverterConstants.*;
 
 public class HundredsConverter implements IConverter 
 {
@@ -14,12 +14,12 @@ public class HundredsConverter implements IConverter
 		
 		finalText.append(new UnitsConverter().convert(hundredthDigit))
 		.append(textSeparator)
-		.append(HundredsConverterConstants.hundred.toString());
+		.append(hundred.toString());
 		
 		if(lastTwoDigits!=0)
 		{
 			finalText.append(textSeparator)
-					.append(HundredsConverterConstants.and.toString())
+					.append(and.toString())
 					.append(textSeparator)
 					.append(new TensConverter().convert(lastTwoDigits));
 		}

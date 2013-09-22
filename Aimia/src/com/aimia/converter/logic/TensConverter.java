@@ -1,6 +1,6 @@
 package com.aimia.converter.logic;
 
-import com.aimia.converter.constants.TensConverterConstants;
+import static com.aimia.converter.constants.TensConverterConstants.*;
 
 public class TensConverter implements IConverter
 {
@@ -29,14 +29,14 @@ public class TensConverter implements IConverter
 	{
 		switch(tens)
 		{
-			case 20: return TensConverterConstants.twenty.toString();
-			case 30: return TensConverterConstants.thirty.toString();
-			case 40: return TensConverterConstants.forty.toString();
-			case 50: return TensConverterConstants.fifty.toString();
-			case 60: return TensConverterConstants.sixty.toString();
-			case 70: return TensConverterConstants.seventy.toString();
-			case 80: return TensConverterConstants.eighty.toString();
-			case 90: return TensConverterConstants.ninety.toString();
+			case 20: return twenty.toString();
+			case 30: return thirty.toString();
+			case 40: return forty.toString();
+			case 50: return fifty.toString();
+			case 60: return sixty.toString();
+			case 70: return seventy.toString();
+			case 80: return eighty.toString();
+			case 90: return ninety.toString();
 		}
 		return "";
 	}
