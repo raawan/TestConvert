@@ -22,7 +22,6 @@ public class NumberToWordsTest
 	@After
 	public void tearDown() throws Exception 
 	{
-		
 	}
 	
 	@Test

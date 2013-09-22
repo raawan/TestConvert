@@ -10,9 +10,13 @@ public class DefaultConverter implements IConverter
 		{
 			converter = new UnitConverter();
 		}
-		else
+		else if(inputNumber >20 && inputNumber < 100)
 		{
 			converter = new TensConverter();
+		}
+		else
+		{
+			converter = new HundredsConverter();
 		}
 		return converter.convert(inputNumber);
 	}
