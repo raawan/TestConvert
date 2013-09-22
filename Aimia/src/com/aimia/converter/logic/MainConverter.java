@@ -1,7 +1,10 @@
-package com.aimia.converter.main;
+package com.aimia.converter.logic;
 
 import java.util.List;
 import java.util.ArrayList;
+
+import com.aimia.converter.main.ThreeDigits;
+import com.aimia.converter.main.Unit;
 
 public class MainConverter implements IConverter 
 {

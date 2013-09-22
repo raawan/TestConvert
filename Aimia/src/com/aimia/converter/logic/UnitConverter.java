@@ -1,4 +1,4 @@
-package com.aimia.converter.main;
+package com.aimia.converter.logic;
 
 public class UnitConverter implements IConverter 
 {

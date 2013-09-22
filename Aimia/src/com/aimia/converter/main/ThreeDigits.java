@@ -5,7 +5,7 @@ public class ThreeDigits
 	private Integer number;
 	private Unit	unit;
 	
-	ThreeDigits(Integer number, Unit unit)
+	public ThreeDigits(Integer number, Unit unit)
 	{
 		this.number = number;
 		this.unit = unit;
